@@ -6,7 +6,7 @@ metadata:
     app: nginx
   name: devnginx
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: nginx
@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: devnginx
-        image: ec2-43-201-146-232.ap-northeast-2.compute.amazonaws.com/u05-project/web02:latest
+        image: ec2-43-201-146-232.ap-northeast-2.compute.amazonaws.com/u05-project/web03:latest
         imagePullPolicy: Always
 
